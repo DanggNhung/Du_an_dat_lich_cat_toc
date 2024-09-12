@@ -11,8 +11,8 @@
     <section id="banner">
         <img src="images/logo.png" class="logo">
         <div class="banner-text">
-            <h1>Duy Long</h1>
-            <p>Dep Zai Quaa</p>
+            <h1>Hair Studio</h1>
+            <p>Styling Your Hair Is Styling Your Life</p>
 
             <div class="banner-btn">
                 <a href="#"><span></span>Find Out</a> 
@@ -20,6 +20,45 @@
             </div>
         </div>
     </section>
+
+    <div id="navigation">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">FEEDBACK</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div id="menubtn">
+        <img src="images/menu.png" id="menu">
+    </div>
+
+    <script>
+        var menubtn = document.getElementById('menubtn');
+        var navigation = document.getElementById('navigation');
+        var menu = document.getElementById('menu');
+
+        navigation.style.right == "-200px";
+
+    menubtn.onclick = function()
+    {
+        if(navigation.style.right == "-200px")
+        {
+            navigation.style.right = "0";
+            menu.src = "images/close.png";
+        }
+        else
+        {
+            navigation.style.right = "-200px";
+            menu.src = "images/menu.png";
+        }
+    }
+    </script>
     
 </body>
 </html>
