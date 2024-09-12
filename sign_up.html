@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber-Signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div class="containter">
+        <div class="register-box">
+            <div class="container_header">
+                    <h3>Tạo tài khoản của bạn</h3>
+            </div>
+            <form id = "formRegister">
+                <div id ="formResgiter" class="container_form">
+                    <div class="container_group">
+                        <h3>Thông tin tài khoản</h3>
+                        <input type="text" class="container_input" id ="userName" placeholder="Nhập tên của bạn" required>
+                    </div>
+                    <div class="container_group">
+                        <input type="email" class="container_input" id = "email" placeholder="Nhâp email của bạn" required>
+                    </div>
+                    <div class="container_group">
+                        <input type="text" class="container_input" id = "contact" placeholder="Nhâp số điện thoại" required>
+                    </div>
+                    <div class="container_group">
+                        <input type="password" class="container_input" id = "password" placeholder="Nhâp mật khẩu của bạn" required>
+                    </div>
+                    <div class="container_group">
+                        <input type="password" class="container_input" id = "rePassword" placeholder="Xác nhận mật khẩu " required><br><br>
+                    </div>
+                </div>
+                <input type="checkbox" id="showPassword" class="show-password" onclick="togglePasswords()"> Hiển thị mật khẩu<br><br>
+                <div class="container_aside">
+                <p class="container_policy-text">
+                    Với việc bấm nút đăng ký, bạn đã đồng ý với Ticket Box về các 
+                    <a href="" class="container_text-link">Điều khoản dịch vụ</a> & <a href="" class="container_text-link">Chính sách bảo mật</a>
+                </p>
+                </div>
+                <div class="container_controls">
+                <button class="btn container_controls-back">
+                    <a href="">Quay lại</a>
+                </button>
+                <button type ="submit" class="btn btn--primary">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>    
+</html>
