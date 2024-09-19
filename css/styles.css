@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('/images/hihi.jpg'); /* Thay đổi với đường dẫn ảnh nền */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Màu nền header với độ trong suốt */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.history p, .vision p, .values ul {
+    font-size: 1.1rem;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values li {
+    padding: 10px 0;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Thêm viền cho các mục */
+.bordered {
+    display: flex;
+    border: 2px solid #333;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng với độ trong suốt */
+    border-radius: 10px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    text-align: center; /* Đặt lại text align để chữ căn trái trong ô */
+    margin: 20px auto; 
+}    
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
