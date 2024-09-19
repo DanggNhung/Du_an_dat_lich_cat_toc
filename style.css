@@ -57,7 +57,7 @@
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     transition: color 0.5s;
-    overflow: hidden; /* Để hiệu ứng hoạt hình không bị vượt ra ngoài nút */
+    overflow: hidden; 
 }
 
 .banner-btn .btn span

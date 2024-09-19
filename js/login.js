@@ -20,10 +20,10 @@ loginForm.addEventListener("submit", function(e) {
     );
 
     if (!findUser) {
-        // Hiển thị lỗi nếu không tìm thấy người dùng
+        
         errorElement.style.display = "block";
     } else {
-        // Đăng nhập thành công, chuyển hướng và lưu thông tin người dùng
+        
         window.location.href = "index.html";
         localStorage.setItem("userLogin", JSON.stringify(findUser));
     }
@@ -34,9 +34,9 @@ function togglePassword() {
     var togglePassword = document.querySelector(".toggle-password");
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
-        togglePassword.textContent = "🙈"; // Thay đổi biểu tượng mắt
+        togglePassword.textContent = "🙈"; 
     } else {
         passwordInput.type = "password";
-        togglePassword.textContent = "👁️"; // Thay đổi biểu tượng mắt
+        togglePassword.textContent = "👁️"; 
     }
 }

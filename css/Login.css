@@ -49,7 +49,7 @@ h2 {
 
 form label {
     display: block;
-    margin: 10px 0 5px; /* Điều chỉnh khoảng cách giữa các nhãn */
+    margin: 10px 0 5px; 
 }
 
 form input, form select {
@@ -58,7 +58,7 @@ form input, form select {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến tổng chiều rộng */
+    box-sizing: border-box; 
 }
 
 form .password-wrapper {
@@ -67,7 +67,7 @@ form .password-wrapper {
 
 form .password-wrapper input {
     width: 100%;
-    padding-right: 30px; /* Để dành khoảng trống cho biểu tượng mắt */
+    padding-right: 30px; 
 }
 
 form .toggle-password {
@@ -94,16 +94,16 @@ form a:hover {
 #btn {
     width: 100%;
     padding: 12px;
-    background-color: #007bff; /* Màu nền xanh */
-    color: #fff; /* Màu chữ trắng */
+    background-color: #007bff; 
+    color: #fff; 
     border: none;
     border-radius: 4px;
-    font-size: 16px; /* Kích thước chữ lớn hơn */
-    font-weight: bold; /* Chữ đậm */
-    cursor: pointer; /* Con trỏ chuột thành hình bàn tay khi hover */
-    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền khi hover */
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 #btn:hover {
-    background-color: #0056b3; /* Màu xanh đậm hơn khi hover */
+    background-color: #0056b3; 
 }
