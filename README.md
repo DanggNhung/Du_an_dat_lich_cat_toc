@@ -20,4 +20,5 @@ Dự án đặt lịch cắt tóc
   Xem các chương trình khuyến mãi
   
   Đánh giá
-  
+  ## User Stories
+  ![User Stories](./user_stories.png)
