@@ -1,4 +1,4 @@
-# Du_an_dat_lich_cat_toC
+![UseStories drawio](https://github.com/user-attachments/assets/bd6896f2-c9db-461c-b968-981eac7e59f8)# Du_an_dat_lich_cat_toC
 Dự án đặt lịch cắt tóc
 
 ## Giới thiệu
@@ -21,4 +21,4 @@ Dự án đặt lịch cắt tóc
   
   Đánh giá
   ## User Stories
-  ![User Stories](./user_stories.png)
+  ![User Stories](./Pictures/UseStories.drawio.png)
