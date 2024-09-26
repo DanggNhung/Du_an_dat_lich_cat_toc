@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.15">
+  <diagram name="Page-1" id="i0PaEPR_Gqp37drp72w5">
+    <mxGraphModel grid="0" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0PisFvoUaGezpD4LvPOE-99" value="Trong vai trò của của ngươi sử dụng, tôi muốn đăng ký để sử dụng các dịch vụ trong tiệm cắt tóc,&lt;br&gt;&lt;br&gt;vậy nên tôi truy cập vào trang đăng ký" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-191" y="-385" width="605" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-2" value="#001" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="-385" width="120" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-3" value="User Sign up" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="-385" width="484" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-6" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Trong vai trò của ngươi sử dụng muốn đăng nhập để sử dụng các tiện ích và dịch vụ, nên tôi&amp;nbsp;&lt;br&gt;&lt;br&gt;truy cập vào trang đăng nhập để sử dụng các tiện ích bên trong&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="-167" width="607" height="131" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-7" value="#002" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="-167" width="120" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-8" value="User Sign in" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="-167" width="487" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-9" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;Là một người sử dụng trang web, tôi muốn truy cập để xem về lịch sử hình thành cũng như giới thiệu về&lt;br&gt;&lt;br&gt;cửa hàng ra sao, tôi truy cập vào trang giới thiệu&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-183" y="56" width="604" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-10" value="#003" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-183" y="56" width="120" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-11" value="Truy cập vào trang giới thiệu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-63" y="56" width="484" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-12" value="Là một người sử dụng dịch vụ, tôi muốn truy cập tìm hiểu thêm về các dịch vụ trong cửa hàng để&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;có thể lựa chọn và tham khảo trước giá, nên tôi truy cập vào trang dịch vụ&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-178" y="290" width="605" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-13" value="#004" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-178" y="290" width="120" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-14" value="Truy cập vào trang dịch vụ" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-58" y="290" width="486" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-15" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;Là một người sử dụng dịch vụ, tôi muốn đặt lịch để hẹn thợ cắt tóc vào ngày giờ tôi mong muốn, đồng&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;thời tốn thời gian ít nhất phải chờ đợi, nên tôi truy cập vào trang đặt lịch&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-181" y="502" width="612" height="133" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-16" value="#005" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-181" y="502" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-17" value="Truy cập vào trang đặt lịch" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-61" y="502" width="492" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-18" value="Là người sử dụng dịch vu, sau khi sử dụng dịch vụ xong tôi muốn đánh giá về chất lượng để có thể&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;chia sẻ thêm cho mọi người, nên tôi truy cập vào đánh giá&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-183" y="703" width="614" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-19" value="#006" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-183" y="703" width="120" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="qdEW-5ghp5JQR0CeHtMn-20" value="Truy cập vào trang đánh giá" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-63" y="703" width="495" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="iLF8SqsWVw-XI0RkLlGx-1" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Là người chủ sở hữu, tôi muốn biết ý kiến khách&amp;nbsp; hàng sau khi sử dụng diochj vụ, từ đó nâng cao chất&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;lượng dịch vụ, nên tôi tạo ra chưc năng đánh giá&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-183" y="924" width="614" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="iLF8SqsWVw-XI0RkLlGx-2" value="#007" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-183" y="924" width="123" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="iLF8SqsWVw-XI0RkLlGx-4" value="Tạo ra trang đánh giá" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-63" y="924" width="495" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="iLF8SqsWVw-XI0RkLlGx-5" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Là một chủ cửa hàng, tôi mong muốn chia sẻ câu chuyện của cửa hàng để mọi người có thể hiểu hơn&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;phần nào đó vừa cửa hàng, cùng với đó là nơi để tôi có thể trình bày với mọi người về tiểu sử cũng như&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;các câu chuyện bên lề&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-183" y="1159" width="610" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="iLF8SqsWVw-XI0RkLlGx-6" value="#008" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-183" y="1159" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="iLF8SqsWVw-XI0RkLlGx-7" value="Trang giới thiệu cửa hàng" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-63" y="1159" width="490" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="iLF8SqsWVw-XI0RkLlGx-8" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Là chủ cửa hàng, tôi mong muốn mọi người có thể biết trước giá và các loại dịch vụ bên tôi trước khi đến&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;làm, tránh tình trạng xung đột hay không hiểu ý, khi chưa có sự chuẩn bị trước, vậy nên tôi tạo ra trang&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;phục vụ&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-180.5" y="1369" width="608.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="iLF8SqsWVw-XI0RkLlGx-9" value="#009" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-181" y="1369" width="128" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="iLF8SqsWVw-XI0RkLlGx-10" value="Admin trang dịch vụ" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-53" y="1369" width="482" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="iLF8SqsWVw-XI0RkLlGx-11" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Là môt chủ cửa hàng, tôi muốn lưu trữ thông tin người dùng đẻ có thể dễ dàng hơn trong việc quản lí và&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;chăm sóc khách hàng, cùng với đó là chương trình hậu mãi, nên tôi tạo ra các trang này&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-183" y="1592" width="611" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="iLF8SqsWVw-XI0RkLlGx-12" value="#010" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-183" y="1592" width="120" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="iLF8SqsWVw-XI0RkLlGx-13" value="Admin trang đăng kí và đăng nhập" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-65" y="1592" width="493" height="52" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

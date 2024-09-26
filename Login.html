@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/Login.css">
+    <title>Sign in</title>
 </head>
 <body>
     <div class="container">
         <div class="login-form">
-            <h1><a href="index.html">Abc</a></h1>
+            <h1><a href="index.html">Thông tin tài khoản</a></h1>
             <h2>Đăng Nhập</h2>
             <form id="login-form" onsubmit="login()">
-                <label for="username">Tên người dùng</label>
-                <input type="text" id="login-username" name="username" required>
+                <label for="email">Email</label>
+                <input type="email" id="login-email" name="email" required>
+                
                 <label for="password">Mật khẩu</label>
-                <input type="password" id="login-password" name="password" required>
-                <button type="submit">Đăng Nhập</button>
-                <p>Chưa có tài khoản? <a href="">Đăng Ký</a></p>
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="password">
+                    <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                </div>                
+                <p id="Error" style="display:none; color:red;">Thông tin đăng nhập không đúng.</p>
+                <button type="submit" id = "btn">Đăng Nhập</button>
+                <p>Chưa có tài khoản? <a href="sign_up.html">Đăng Ký</a></p>
             </form>
         </div>
     </div>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>
