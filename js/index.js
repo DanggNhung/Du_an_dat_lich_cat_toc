@@ -1,26 +1,35 @@
+
 var menubtn = document.getElementById('menubtn');
 var navigation = document.getElementById('navigation');
 var menu = document.getElementById('menu');
 
-navigation.style.right == "-200px";
+// Đặt vị trí mặc định của thanh điều hướng
+navigation.style.right = "-200px";
 
 menubtn.onclick = function() { 
-    if(navigation.style.right == "-200px") {
+    if (navigation.style.right === "-200px") {
         navigation.style.right = "0";
         menu.src = "images/close.png";
     } else {
         navigation.style.right = "-200px";
         menu.src = "images/menu.png";
     }
-};
-
+}
 document.addEventListener("DOMContentLoaded", function() {
-    // Kiểm tra xem người dùng đã đăng nhập hay chưa
-    const loggedInUser = JSON.parse(localStorage.getItem("userLogin"));
+    // Lấy thông tin người dùng đã đăng nhập từ localStorage
+    const userLogin = JSON.parse(localStorage.getItem("userLogin"));
+    const welcomeMessage = document.getElementById("welcome-message");
+    const loginBtn = document.getElementById("loginBtn");
+    const registerBtn = document.getElementById("registerBtn");
 
-    if (loggedInUser) {
-        // Nếu đã đăng nhập, ẩn các nút "Sign in" và "Sign up"
-        document.getElementById("loginBtn").style.display = "none";
-        document.getElementById("registerBtn").style.display = "none";
+    if (userLogin) {
+        // Hiển thị thông điệp chào mừng
+        welcomeMessage.style.display = "block";
+        welcomeMessage.innerHTML = `Xin chào, ${userLogin.email}! Chào mừng bạn đến với Hair Studio.`;
+
+        // Ẩn nút Đăng Nhập và Đăng Ký
+        loginBtn.style.display = "none";
+        registerBtn.style.display = "none";
     }
 });
+
