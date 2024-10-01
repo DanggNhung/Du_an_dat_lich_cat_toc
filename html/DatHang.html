@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Bán Hàng</title>
+    <link rel="stylesheet" href="css/ DatHang.css">
+</head>
+<body>
+    <header>
+        <h1>Cửa hàng Online</h1>
+        <div class="cart">
+            <span>Giỏ hàng: <span id="cart-count">0</span> sản phẩm</span>
+        </div>
+    </header>
+    <main>
+        <div class="product-list">
+            <div class="product">
+                <h2>Sản phẩm 1</h2>
+                <p>Giá: $10</p>
+                <button onclick="addToCart(10)">Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <h2>Sản phẩm 2</h2>
+                <p>Giá: $20</p>
+                <button onclick="addToCart(20)">Thêm vào giỏ</button>
+            </div>
+        </div>
+        <div class="checkout">
+            <h3>Tổng cộng: $<span id="total-amount">0</span></h3>
+            <button id="checkout-btn" onclick="checkout()">Thanh toán</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
