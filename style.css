@@ -178,6 +178,7 @@ nav ul li a
 {
     font-size: 50px;
 }
+<<<<<<< HEAD
 
 .feature-box
 {
@@ -234,3 +235,18 @@ nav ul li a
     text-align: initial;
 }
 /* features */
+=======
+#welcome-message {
+    font-size: 20px;  
+    font-weight: bold; 
+    color: #333;       
+    margin: 20px 0;   
+    padding: 10px;    
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    text-align: center; 
+    width: 50%;
+    margin: 20px auto;
+}
+>>>>>>> 2355c4577e27e17c940125d2e436ffc256e23b34

@@ -18,18 +18,24 @@
         <div class="banner-text">
             <h1>Hair Studio</h1>
             <p>Styling Your Hair Is Styling Your Life</p>
-
+            <div id="welcome-message" style="display: none;"></div>
             <div class="banner-btn">
+<<<<<<< HEAD
                 <a href="#"><span></span>Sign In</a> 
                 <a href="#"><span></span>Sign Up</a>
             </div>
+=======
+                <button class="btn" id="loginBtn" onclick="location.href='Login.html'">Sign in</button>
+                <button class="btn" id="registerBtn" onclick="location.href='sign_up.html'">Sign up</button>
+            </div>            
+>>>>>>> 2355c4577e27e17c940125d2e436ffc256e23b34
         </div>
     </section>
 
     <div id="navigation">
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
+                <li><a href="/html/Datlich.html">Booking</a></li>
                 <li><a href="/html/Gioithieu.html">About Us</a></li>
                 <li><a href="/html/DichVu.html">SERVICES</a></li>
                 <li><a href="#">FEEDBACK</a></li>
@@ -98,28 +104,6 @@
             </div>
         </div>
     </section>
-
-    <script>
-        var menubtn = document.getElementById('menubtn');
-        var navigation = document.getElementById('navigation');
-        var menu = document.getElementById('menu');
-
-        navigation.style.right == "-200px";
-
-    menubtn.onclick = function()
-    { 
-        if(navigation.style.right == "-200px")
-        {
-            navigation.style.right = "0";
-            menu.src = "images/close.png";
-        }
-        else
-        {
-            navigation.style.right = "-200px";
-            menu.src = "images/menu.png";
-        }
-    }
-    </script>
-    
+    <script src="js/index.js"></script>
 </body>
 </html>

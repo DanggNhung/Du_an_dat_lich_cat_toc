@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/images/anh1.jpg') no-repeat center center fixed;
+    background-size: cover; /* Đảm bảo ảnh nền phủ toàn bộ màn hình */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Nền trong suốt nhẹ để thấy ảnh nền */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    backdrop-filter: blur(5px); /* Tạo hiệu ứng mờ phía sau container */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+#confirmation {
+    display: none; /* Ẩn hộp xác nhận ban đầu */
+    position: fixed; /* Định vị cố định */
+    top: 50%; /* Đặt giữa màn hình */
+    left: 50%; /* Đặt giữa màn hình */
+    transform: translate(-50%, -50%); /* Căn giữa hoàn toàn */
+    border: 1px solid #009688; /* Đường viền */
+    padding: 20px; /* Đệm bên trong */
+    background-color: #e0f7fa; /* Màu nền */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Đổ bóng */
+    z-index: 1000; /* Đặt lên trên các phần tử khác */
+}
+#confirmation h2 {
+    margin: 0 0 10px; /* Khoảng cách */
+}
+#confirmation button {
+    margin-top: 20px; /* Khoảng cách trên nút */
+    padding: 10px 15px; /* Đệm cho nút */
+    border: none; /* Không có đường viền */
+    background-color: #009688; /* Màu nền cho nút */
+    color: white; /* Màu chữ */
+    cursor: pointer; /* Con trỏ khi di chuột */
+}
+#confirmation button:hover {
+    background-color: #00796b; /* Màu khi hover */
+}

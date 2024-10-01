@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt lịch cắt tóc</title>
+    <link rel="stylesheet" href="/css/datlich.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Đặt lịch hẹn cắt tóc</h1>
+        <form id="bookingForm">
+            <label for="userName">Tên người dùng:</label>
+            <input type="text" id="userName" readonly><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" readonly><br>
+
+            <label for="date">Chọn ngày:</label>
+            <input type="date" id="date" required><br>
+
+            <label for="time">Chọn giờ:</label>
+            <input type="time" id="time" required><br>
+
+            <label for="service">Chọn dịch vụ:</label>
+            <select id="service">
+                <option value="cat-toc">Cắt tóc</option>
+                <option value="goi-dau">Gội đầu</option>
+                <option value="nhuom-toc">Nhuộm tóc</option>
+            </select><br>
+
+            <label for="note">Ghi chú thêm:</label>
+            <textarea id="note"></textarea><br>
+
+            <button type="submit">Đặt lịch</button>
+        </form>
+        <div id="confirmation">
+            <h2>Thông tin xác nhận</h2>
+            <p id="confirmation-message"></p>
+            <button id="ok-button">OK</button>
+        </div>
+    </div>
+
+    <script src = "/js/datlich.js"></script>
+</body>
+</html>
