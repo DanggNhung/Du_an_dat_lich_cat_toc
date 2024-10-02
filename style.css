@@ -223,15 +223,79 @@ nav ul li a
 }
 /* features */
 #welcome-message {
-    font-size: 20px;  
-    font-weight: bold; 
-    color: #333;       
-    margin: 20px 0;   
-    padding: 10px;    
-    background-color: #f0f0f0; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    text-align: center; 
-    width: 50%;
+    width: 45%; /* Kích thước tương tự như nút */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
     margin: 20px auto;
+    padding: 12px 0;
+    border: 2px solid white;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.5s;
+    overflow: hidden;
+    text-align: center; /* Căn giữa nội dung */
+}
+
+#welcome-message span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+#welcome-message:hover span {
+    width: 100%;
+}
+
+#welcome-message:hover {
+    color: black;
+    font-weight: bold;
+}
+
+
+#logoutBtn {
+    width: 150px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 0;
+    border: 2px solid white;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.5s;
+    overflow: hidden;
+}
+
+#logoutBtn span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+#logoutBtn:hover span {
+    width: 100%;
+}
+
+#logoutBtn:hover {
+    color: black;
+    font-weight: bold;
 }
