@@ -18,12 +18,29 @@ header {
 }
 
 .product-list {
+    flex-basis: calc(50% - 10px);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px;
 }
-
+.picture{
+    object-fit: contain;
+    transform: translate(-100px, -50px);
+    height: 200px;
+    object-fit: cover;
+}
+img{
+    position: relative; /* Hoặc absolute tùy mục đích */
+    transform: translate(-100px, -50px);
+    height: 300px;
+    object-fit: cover;
+}
 .product {
+    overflow: hidden;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
