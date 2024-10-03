@@ -1,5 +1,5 @@
 body {
-    background: url('/images/hihi.jpg');
+    background: url('/images/chung.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -17,9 +17,11 @@ body {
     width: 100%;
     max-width: 400px;
     padding: 20px;
-    background: rgb(168, 138, 138);
+    background: rgb(255, 255, 255, 0.8);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    backdrop-filter: blur(10px); /* Mờ nền phía sau */
+    margin: 0 auto;
 }
 
 .login-form {
