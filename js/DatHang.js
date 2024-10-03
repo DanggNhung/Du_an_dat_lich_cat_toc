@@ -9,7 +9,7 @@ function addToCart(price) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    let totalAmount = 100; // Giả sử đã tính được tổng tiền
+    let totalAmount = 100; 
 
     if (totalAmount > 0) {
         const checkoutBtn = document.getElementById('checkoutBtn');
@@ -19,24 +19,18 @@ document.addEventListener('DOMContentLoaded', function () {
         const closeSuccess = document.querySelector('.close-success');
         const checkoutForm = document.getElementById('checkoutForm');
 
-        // Khi nhấn vào nút "Thanh toán", hiển thị hộp thoại
         checkoutBtn.addEventListener('click', function () {
             checkoutBox.style.display = 'block';
         });
 
-        // Khi nhấn vào nút "x" để đóng hộp thoại
         closeBtn.addEventListener('click', function () {
             checkoutBox.style.display = 'none';
         });
-
-        // Khi nhấn vào bất kỳ đâu bên ngoài hộp thoại, hộp thoại sẽ đóng
         window.addEventListener('click', function (event) {
             if (event.target === checkoutBox) {
                 checkoutBox.style.display = 'none';
             }
         });
-
-        // Khi nhấn "Đồng ý", kiểm tra dữ liệu và hiển thị thông báo
         checkoutForm.addEventListener('submit', function (event) {
             event.preventDefault();
 
@@ -53,18 +47,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert("Số điện thoại không hợp lệ. Phải có 10 chữ số.");
                 return;
             }
-
-            // Hiển thị hộp thông báo thành công
             checkoutBox.style.display = 'none';
             successBox.style.display = 'block';
         });
 
-        // Khi nhấn vào nút "x" để đóng hộp thông báo thành công
         closeSuccess.addEventListener('click', function () {
             successBox.style.display = 'none';
         });
 
-        // Đóng hộp thông báo thành công khi nhấn ra ngoài
         window.addEventListener('click', function (event) {
             if (event.target === successBox) {
                 successBox.style.display = 'none';
