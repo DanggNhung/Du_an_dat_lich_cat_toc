@@ -20,15 +20,18 @@ loginForm.addEventListener("submit", function(e) {
     );
 
     if (!findUser) {
-        
+        // Nếu không tìm thấy người dùng, hiển thị thông báo lỗi
         errorElement.style.display = "block";
     } else {
-        
-        window.location.href = "index.html";
+        // Nếu tìm thấy người dùng, lưu thông tin đăng nhập vào localStorage
         localStorage.setItem("userLogin", JSON.stringify(findUser));
+        
+        // Chuyển hướng đến trang chính sau khi đăng nhập thành công
+        window.location.href = "index.html";
     }
 });
 
+// Hàm toggle hiển thị mật khẩu
 function togglePassword() {
     var passwordInput = document.getElementById("password");
     var togglePassword = document.querySelector(".toggle-password");

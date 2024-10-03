@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('/images/DoiMK.jpg'); /* Đường dẫn đến ảnh background */
+    background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ màn hình */
+    background-position: center; /* Canh giữa ảnh */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Màu nền dự phòng nếu ảnh không tải được */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.85); /* Màu nền trắng với độ mờ 90% */
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width:90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.error {
+    color: red;
+    display: none;
+}

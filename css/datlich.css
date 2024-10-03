@@ -63,28 +63,28 @@ button:hover {
     background-color: #4cae4c;
 }
 #confirmation {
-    display: none; /* Ẩn hộp xác nhận ban đầu */
-    position: fixed; /* Định vị cố định */
-    top: 50%; /* Đặt giữa màn hình */
-    left: 50%; /* Đặt giữa màn hình */
-    transform: translate(-50%, -50%); /* Căn giữa hoàn toàn */
-    border: 1px solid #009688; /* Đường viền */
-    padding: 20px; /* Đệm bên trong */
-    background-color: #e0f7fa; /* Màu nền */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Đổ bóng */
-    z-index: 1000; /* Đặt lên trên các phần tử khác */
+    display: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border: 1px solid #009688; 
+    padding: 20px; 
+    background-color: #e0f7fa; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
 }
 #confirmation h2 {
-    margin: 0 0 10px; /* Khoảng cách */
+    margin: 0 0 10px;
 }
 #confirmation button {
-    margin-top: 20px; /* Khoảng cách trên nút */
-    padding: 10px 15px; /* Đệm cho nút */
-    border: none; /* Không có đường viền */
-    background-color: #009688; /* Màu nền cho nút */
-    color: white; /* Màu chữ */
-    cursor: pointer; /* Con trỏ khi di chuột */
+    margin-top: 20px; 
+    padding: 10px 15px; 
+    border: none; 
+    background-color: #009688; 
+    color: white; 
+    cursor: pointer; 
 }
 #confirmation button:hover {
-    background-color: #00796b; /* Màu khi hover */
+    background-color: #00796b; 
 }
