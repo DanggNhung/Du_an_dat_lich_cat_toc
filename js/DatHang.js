@@ -8,12 +8,59 @@ function addToCart(price) {
     document.getElementById('total-amount').innerText = totalAmount;
 }
 
-function checkout() {
+document.addEventListener('DOMContentLoaded', function () {
+    let totalAmount = 100; 
+
     if (totalAmount > 0) {
-        alert(`Tổng tiền của bạn là $${totalAmount}. Chuyển tới trang thanh toán...`);
-        // Đối với thanh toán thực tế, bạn có thể chuyển hướng người dùng đến cổng thanh toán PayPal.
-        window.location.href = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=YOUR_PAYPAL_EMAIL&amount=${totalAmount}&currency_code=USD`;
+        const checkoutBtn = document.getElementById('checkoutBtn');
+        const checkoutBox = document.getElementById('checkoutBox');
+        const closeBtn = document.querySelector('.close');
+        const successBox = document.getElementById('successBox');
+        const closeSuccess = document.querySelector('.close-success');
+        const checkoutForm = document.getElementById('checkoutForm');
+
+        checkoutBtn.addEventListener('click', function () {
+            checkoutBox.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', function () {
+            checkoutBox.style.display = 'none';
+        });
+        window.addEventListener('click', function (event) {
+            if (event.target === checkoutBox) {
+                checkoutBox.style.display = 'none';
+            }
+        });
+        checkoutForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const address = document.getElementById('address').value.trim();
+
+            if (name === "" || phone === "" || address === "") {
+                alert("Vui lòng điền đầy đủ thông tin.");
+                return;
+            }
+
+            if (!/^\d{10}$/.test(phone)) {
+                alert("Số điện thoại không hợp lệ. Phải có 10 chữ số.");
+                return;
+            }
+            checkoutBox.style.display = 'none';
+            successBox.style.display = 'block';
+        });
+
+        closeSuccess.addEventListener('click', function () {
+            successBox.style.display = 'none';
+        });
+
+        window.addEventListener('click', function (event) {
+            if (event.target === successBox) {
+                successBox.style.display = 'none';
+            }
+        });
     } else {
         alert("Giỏ hàng của bạn đang trống!");
     }
-}
+});
