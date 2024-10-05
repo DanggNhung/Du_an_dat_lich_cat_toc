@@ -9,22 +9,46 @@ body {
     background-color: #f4f4f4;
     color: #333;
     display: flex;
-    justify-content: center;
+    flex-direction: column; 
     align-items: center;
     height: 100vh;
     background: url('/images/anh1.jpg') no-repeat center center fixed;
-    background-size: cover; /* Đảm bảo ảnh nền phủ toàn bộ màn hình */
+    background-size: cover; 
+}
+
+.header {
+    text-align: center; 
+    margin-bottom: 20px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.view-bookings-button {
+    display: inline-block; 
+    margin-top: 10px; 
+    padding: 10px 15px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; 
+    font-size: 16px; 
+}
+
+.view-bookings-button:hover {
+    background-color: #0056b3; 
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.9); /* Nền trong suốt nhẹ để thấy ảnh nền */
+    background-color: rgba(255, 255, 255, 0.9); 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
-    backdrop-filter: blur(5px); /* Tạo hiệu ứng mờ phía sau container */
+    backdrop-filter: blur(5px); 
 }
-
 h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -62,6 +86,7 @@ button {
 button:hover {
     background-color: #4cae4c;
 }
+
 #confirmation {
     display: none; 
     position: fixed; 
@@ -74,9 +99,11 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     z-index: 1000; 
 }
+
 #confirmation h2 {
     margin: 0 0 10px;
 }
+
 #confirmation button {
     margin-top: 20px; 
     padding: 10px 15px; 
@@ -85,6 +112,7 @@ button:hover {
     color: white; 
     cursor: pointer; 
 }
+
 #confirmation button:hover {
     background-color: #00796b; 
 }

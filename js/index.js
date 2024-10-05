@@ -5,7 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const loginBtn = document.getElementById("loginBtn");
     const registerBtn = document.getElementById("registerBtn");
     const logoutBtn = document.getElementById("logoutBtn"); // Nút Đăng xuất
-    const changePasswordLink = document.getElementById("changePasswordLink"); // Link đổi mật khẩu
+    const changePasswordLink = document.getElementById("changePasswordLink");
+    const checkingBookingLink = document.getElementById("checkingBookingLink");
+    const bookingLink = document.querySelector("a[href='/html/Datlich.html']"); // Link Booking
+    const shopLink = document.querySelector("a[href='/html/DatHang.html']"); // Link Shop
 
     if (userLogin) {
         // Hiển thị thông điệp chào mừng
@@ -19,8 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
         // Hiển thị nút Đăng xuất
         logoutBtn.style.display = "inline-block";
 
-        // Hiển thị link đổi mật khẩu
+        // Hiển thị link đổi mật khẩu và kiểm tra lịch hẹn
         changePasswordLink.style.display = "inline-block"; 
+        checkingBookingLink.style.display = "inline-block";
 
         // Sự kiện khi nhấn nút Đăng xuất
         logoutBtn.onclick = function() {
@@ -30,13 +34,37 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Khi người dùng nhấn vào "Đổi mật khẩu"
         changePasswordLink.onclick = function() {
-            location.href = "html/DoiMatKhau.html"; // Chuyển hướng đến trang đổi mật khẩu
+            location.href = "/html/DoiMatKhau.html"; // Chuyển hướng đến trang đổi mật khẩu
         };
 
     } else {
         // Ẩn nút Đăng xuất và link đổi mật khẩu khi chưa đăng nhập
         logoutBtn.style.display = "none";
         changePasswordLink.style.display = "none";
+        checkingBookingLink.style.display = "none";
+        
+        // Chặn sự kiện khi nhấn vào Booking nếu chưa đăng nhập
+        bookingLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Ngăn chặn chuyển hướng mặc định
+            alert('Bạn cần phải đăng nhập để đặt lịch!'); // Hiển thị thông báo
+        });
+
+        // Chặn sự kiện khi nhấn vào Shop nếu chưa đăng nhập
+        shopLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Ngăn chặn chuyển hướng mặc định
+            alert('Bạn cần phải đăng nhập để mua hàng!'); // Hiển thị thông báo
+        });
+    }
+
+    // Sự kiện khi người dùng nhấn vào Booking nếu đã đăng nhập
+    if (userLogin) {
+        bookingLink.addEventListener('click', function() {
+            location.href = "/html/Datlich.html"; // Chuyển hướng đến trang Booking
+        });
+
+        shopLink.addEventListener('click', function() {
+            location.href = "/html/DatHang.html"; // Chuyển hướng đến trang Shop
+        });
     }
 });
 
