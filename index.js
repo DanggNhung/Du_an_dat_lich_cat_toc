@@ -79,11 +79,11 @@ navigation.style.right = "-200px";
 // Khi di chuột vào nút menu
 menubtn.onmouseover = function() {
     navigation.style.right = "0";
-    menu.src = "images/close.png"; 
+    menu.src = "./html/images/close.png"; 
 };
 
 // Khi di chuột ra khỏi nút menu, hoặc menu, menu sẽ thu lại
 navigation.onmouseleave = function() {
     navigation.style.right = "-200px";
-    menu.src = "images/menu.png"; 
+    menu.src = "./html/images/menu.png"; 
 };
