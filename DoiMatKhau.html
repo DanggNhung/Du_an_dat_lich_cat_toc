@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổi Mật Khẩu</title>
+    <link rel="stylesheet" href="./css/DoiMatKhau.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đổi Mật Khẩu</h2>
+
+        <!-- Phần này sẽ hiển thị nếu người dùng đã đăng nhập -->
+        <section id="changePasswordSection" style="display: none;">
+            <form id="changePasswordForm">
+                <label for="currentPassword">Mật khẩu hiện tại:</label>
+                <input type="password" id="currentPassword" placeholder="Mật khẩu hiện tại" required>
+                
+                <label for="newPassword">Mật khẩu mới:</label>
+                <input type="password" id="newPassword" placeholder="Mật khẩu mới" required>
+                
+                <label for="confirmNewPassword">Xác nhận mật khẩu mới:</label>
+                <input type="password" id="confirmNewPassword" placeholder="Xác nhận mật khẩu mới" required>
+                
+                <span id="errorMessage" class="error" style="display: none;">Thông tin không chính xác!</span>
+                
+                <button type="submit">Đổi mật khẩu</button>
+            </form>
+        </section>
+        
+        <div id="loginMessage" style="display: none;">
+            <p>Bạn cần đăng nhập để đổi mật khẩu.</p>
+        </div>
+    </div>
+
+    <script src="./js/DoiMatKhau.js"></script>
+</body>
+</html>
+

@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const logoutBtn = document.getElementById("logoutBtn"); // Nút Đăng xuất
     const changePasswordLink = document.getElementById("changePasswordLink");
     const checkingBookingLink = document.getElementById("checkingBookingLink");
-    const bookingLink = document.querySelector("a[href='./html/Datlich.html']"); // Link Booking
-    const shopLink = document.querySelector("a[href='./html/DatHang.html']"); // Link Shop
+    const bookingLink = document.querySelector("a[href='./Datlich.html']"); // Link Booking
+    const shopLink = document.querySelector("a[href='./DatHang.html']"); // Link Shop
 
     if (userLogin) {
         // Hiển thị thông điệp chào mừng
@@ -59,11 +59,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Sự kiện khi người dùng nhấn vào Booking nếu đã đăng nhập
     if (userLogin) {
         bookingLink.addEventListener('click', function() {
-            location.href = "./html/Datlich.html"; // Chuyển hướng đến trang Booking
+            location.href = "./Datlich.html"; // Chuyển hướng đến trang Booking
         });
 
         shopLink.addEventListener('click', function() {
-            location.href = "./html/DatHang.html"; // Chuyển hướng đến trang Shop
+            location.href = "./DatHang.html"; // Chuyển hướng đến trang Shop
         });
     }
 });

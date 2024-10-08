@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="http://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+        crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/feedback.css"/>
+    
+    <title>FEEDBACK</title>
+</head>
+<body>
+    <div class="Feedback-container">
+        <h1>Give us your valuable feedback</h1>
+        <p>Your Fb is very important to us</p>
+        <div class="emoji-box">
+            <button class="btn normal">&#128578;</button>
+            <button class="btn normal">&#128515;</button>
+            <button class="btn normal">&#128519;</button>
+            <button class="btn normal">&#128531;</button>
+            <button class="btn normal">&#128532;</button>
+            <button class="btn normal">&#128545;</button>
+        </div>
+        <p class="question">What you want to say?</p>
+        <textarea id="textarea" cols="20" rows="5"></textarea>
+        <p class="question">Are u want to share this publickly?</p>
+        <div class="radio-btns">
+            <div class="one-btn">
+                <input type="radio" name="one" id="Yes" />
+                <label for="Yes">Yes</label>
+            </div>
+            <div class="one-btn">
+                <input type="radio" name="one" id="No" />
+                <label for="No">No</label>
+            </div>
+        </div>
+        <div class="info-field">
+            <div class="name">
+                <label>
+                    <input type="text" placeholder=" " />
+                    <span>Nickname</span>
+                </label>
+            </div>
+            <div class="email">
+                <label>
+                    <input type="email" placeholder=" " />
+                    <span>Email address (Will not be published)</span>
+                </label>
+            </div>
+        </div>
+        <div class="accept">
+            <input type="radio" id="accept" />
+            <label>I accept the <a href="#">terms and conditions</a></label>
+        </div>
+        <div class="center">
+            <button class="btn button">Send</button>
+        </div>
+    </div>
+    <script src="./js/feedback.js"></script>
+</body>
+</html>
