@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const logoutBtn = document.getElementById("logoutBtn"); // Nút Đăng xuất
     const changePasswordLink = document.getElementById("changePasswordLink");
     const checkingBookingLink = document.getElementById("checkingBookingLink");
-    const bookingLink = document.querySelector("a[href='/html/Datlich.html']"); // Link Booking
-    const shopLink = document.querySelector("a[href='/html/DatHang.html']"); // Link Shop
+    const bookingLink = document.querySelector("a[href='./html/Datlich.html']"); // Link Booking
+    const shopLink = document.querySelector("a[href='./html/DatHang.html']"); // Link Shop
 
     if (userLogin) {
         // Hiển thị thông điệp chào mừng
