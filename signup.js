@@ -76,7 +76,7 @@ formRegister.addEventListener("submit", function(e) {
     alert("Đăng ký thành công!");
 
     setTimeout(function() {
-        window.location.href = "login.html";
+        window.location.href = "./login.html";
     }, 1500);
 });
 

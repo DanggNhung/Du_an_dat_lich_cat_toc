@@ -1,5 +1,5 @@
 body {
-    background: url('/images/chung.jpg');
+    background: url('./images/chung.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 

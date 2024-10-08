@@ -27,7 +27,7 @@ loginForm.addEventListener("submit", function(e) {
         localStorage.setItem("userLogin", JSON.stringify(findUser));
         
         // Chuyển hướng đến trang chính sau khi đăng nhập thành công
-        window.location.href = "index.html";
+        window.location.href = "./index.html";
     }
 });
 

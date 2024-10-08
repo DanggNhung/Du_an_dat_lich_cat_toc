@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: url('/images/DoiMK.jpg'); /* Đường dẫn đến ảnh background */
+    background: url('./images/DoiMK.jpg'); /* Đường dẫn đến ảnh background */
     background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ màn hình */
     background-position: center; /* Canh giữa ảnh */
     background-repeat: no-repeat; /* Không lặp lại ảnh */

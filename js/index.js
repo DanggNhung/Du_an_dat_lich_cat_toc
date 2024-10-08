@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Khi người dùng nhấn vào "Đổi mật khẩu"
         changePasswordLink.onclick = function() {
-            location.href = "/html/DoiMatKhau.html"; // Chuyển hướng đến trang đổi mật khẩu
+            location.href = "./html/DoiMatKhau.html"; // Chuyển hướng đến trang đổi mật khẩu
         };
 
     } else {
@@ -59,11 +59,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Sự kiện khi người dùng nhấn vào Booking nếu đã đăng nhập
     if (userLogin) {
         bookingLink.addEventListener('click', function() {
-            location.href = "/html/Datlich.html"; // Chuyển hướng đến trang Booking
+            location.href = "./html/Datlich.html"; // Chuyển hướng đến trang Booking
         });
 
         shopLink.addEventListener('click', function() {
-            location.href = "/html/DatHang.html"; // Chuyển hướng đến trang Shop
+            location.href = "./html/DatHang.html"; // Chuyển hướng đến trang Shop
         });
     }
 });

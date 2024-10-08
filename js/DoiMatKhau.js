@@ -59,6 +59,6 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Đổi mật khẩu thành công!");
 
         // Chuyển hướng về trang đăng nhập hoặc trang chính
-        window.location.href = "/Login.html"; 
+        window.location.href = "./Login.html"; 
     });
 });
