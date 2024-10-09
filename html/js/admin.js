@@ -4,14 +4,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const confirmationDiv = document.getElementById("confirmation");
     const confirmDeleteButton = document.getElementById("confirmDelete");
     const cancelDeleteButton = document.getElementById("cancelDelete");
+    const searchEmailField = document.getElementById("searchEmail"); // Lấy ô nhập email
+    const searchButton = document.getElementById("searchButton");
 
     // Lấy danh sách lịch hẹn từ localStorage
     const bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+    let filteredBookings = [...bookings]; // Khởi tạo danh sách đã lọc
 
     // Hàm hiển thị danh sách lịch hẹn
-    function displayBookings() {
+    function displayBookings(bookingsToDisplay) {
         bookingTableBody.innerHTML = ""; // Xóa nội dung cũ
-        bookings.forEach((booking, index) => {
+        bookingsToDisplay.forEach((booking, index) => {
             const row = document.createElement("tr");
             row.innerHTML = `
                 <td>${booking.userName}</td>
@@ -19,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <td>${booking.date}</td>
                 <td>${booking.time}</td>
                 <td>${booking.service}</td>
-                <td>${booking.note}</td>
+                <td>${booking.note || "Không có ghi chú"}</td>
                 <td>
                     <button class="delete-button" data-index="${index}">Xóa</button>
                 </td>
@@ -29,13 +32,20 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Hiển thị danh sách lịch hẹn khi trang được tải
-    displayBookings();
+    displayBookings(bookings);
+
+    // Xử lý sự kiện click cho nút tìm kiếm
+    searchButton.addEventListener("click", function() {
+        const searchEmail = searchEmailField.value.trim().toLowerCase(); // Lấy giá trị email đã nhập và chuyển về chữ thường
+        filteredBookings = bookings.filter(booking => booking.email.toLowerCase().includes(searchEmail)); // Lọc lịch hẹn theo email
+        displayBookings(filteredBookings); // Hiển thị lịch hẹn đã lọc
+    });
 
     // Xử lý sự kiện click cho nút xóa
     bookingTableBody.addEventListener("click", function(e) {
         if (e.target.classList.contains("delete-button")) {
             const index = e.target.getAttribute("data-index");
-            const bookingToDelete = bookings[index];
+            const bookingToDelete = filteredBookings[index]; // Lấy booking từ danh sách đã lọc
             confirmationMessage.innerHTML = `Bạn có chắc chắn muốn xóa lịch hẹn của ${bookingToDelete.userName} không?`;
             confirmationDiv.style.display = "block"; // Hiện hộp xác nhận
             confirmationDiv.setAttribute("data-index", index); // Lưu chỉ số để xóa sau
@@ -45,10 +55,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Xác nhận xóa lịch hẹn
     confirmDeleteButton.addEventListener("click", function() {
         const index = confirmationDiv.getAttribute("data-index");
-        bookings.splice(index, 1); // Xóa lịch hẹn
+        const bookingToDelete = filteredBookings[index]; // Lấy booking từ danh sách đã lọc
+        const originalIndex = bookings.indexOf(bookingToDelete); // Tìm chỉ số trong danh sách gốc
+        bookings.splice(originalIndex, 1); // Xóa lịch hẹn từ danh sách gốc
         localStorage.setItem("bookings", JSON.stringify(bookings)); // Lưu lại vào localStorage
         confirmationDiv.style.display = "none"; // Ẩn hộp xác nhận
-        displayBookings(); // Cập nhật danh sách
+        displayBookings(bookings); // Cập nhật danh sách
     });
 
     // Hủy bỏ xóa

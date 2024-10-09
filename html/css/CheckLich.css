@@ -1,73 +1,73 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Màu nền nhẹ nhàng */
+    background-color: #f0f0f0; 
     margin: 0;
     padding: 20px;
     background: url('./images/hinh nen.jpg') no-repeat center center fixed; 
-    background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ */
-    color: #333; /* Màu chữ tối cho độ tương phản tốt */
-    font-family: Arial, sans-serif; /* Đặt font chữ */
+    background-size: cover; 
+    color: #333; 
+    font-family: Arial, sans-serif;
 }
 
 .container {
-    max-width: 800px; /* Độ rộng tối đa cho nội dung */
-    margin: 0 auto; /* Căn giữa trang */
-    background-color: #ffffff; /* Nền trắng cho container */
-    border-radius: 8px; /* Bo góc cho container */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho container */
+    max-width: 800px; 
+    margin: 0 auto; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
     padding: 20px;
 }
 
 h1 {
-    text-align: center; /* Căn giữa tiêu đề */
-    color: #333; /* Màu chữ tối */
+    text-align: center;
+    color: #333; 
 }
 
 table {
-    width: 100%; /* Chiều rộng 100% */
-    border-collapse: collapse; /* Gộp các viền lại với nhau */
-    margin-top: 20px; /* Khoảng cách trên bảng */
+    width: 100%; 
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
 th, td {
-    padding: 12px; /* Khoảng cách bên trong ô */
-    text-align: left; /* Căn trái nội dung */
-    border-bottom: 1px solid #ccc; /* Viền dưới cho ô */
+    padding: 12px;
+    text-align: left; 
+    border-bottom: 1px solid #ccc; 
 }
 
 th {
-    background-color: #4CAF50; /* Màu nền cho tiêu đề bảng */
-    color: white; /* Màu chữ trắng cho tiêu đề */
+    background-color: #4CAF50; 
+    color: white; 
 }
 
 tr:hover {
-    background-color: #f1f1f1; /* Hiệu ứng hover cho dòng */
+    background-color: #f1f1f1;
 }
 
 @media screen and (max-width: 600px) {
     table, thead, tbody, th, td, tr {
-        display: block; /* Hiển thị dạng khối cho các phần tử */
+        display: block; 
     }
 
     th {
-        display: none; /* Ẩn tiêu đề trong chế độ di động */
+        display: none;
     }
 
     td {
-        text-align: right; /* Căn phải nội dung ô */
-        position: relative; /* Để thêm các ghi chú */
-        padding-left: 50%; /* Thêm khoảng cách bên trái */
+        text-align: right; 
+        position: relative; 
+        padding-left: 50%; 
     }
 
     td::before {
-        content: attr(data-label); /* Hiển thị nhãn bên trái ô */
-        position: absolute; /* Định vị tuyệt đối */
-        left: 0; /* Căn trái */
-        width: 50%; /* Chiều rộng cho nhãn */
-        padding-left: 10px; /* Khoảng cách bên trái */
-        text-align: left; /* Căn trái cho nhãn */
-        font-weight: bold; /* Chữ đậm cho nhãn */
-        color: #333; /* Màu chữ cho nhãn */
+        content: attr(data-label); 
+        position: absolute; 
+        left: 0;
+        width: 50%; 
+        padding-left: 10px; 
+        text-align: left; 
+        font-weight: bold; 
+        color: #333; 
     }
 }
 

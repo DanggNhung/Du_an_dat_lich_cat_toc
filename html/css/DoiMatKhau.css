@@ -1,15 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background: url('./images/DoiMK.jpg'); /* Đường dẫn đến ảnh background */
-    background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ màn hình */
-    background-position: center; /* Canh giữa ảnh */
-    background-repeat: no-repeat; /* Không lặp lại ảnh */
+    background: url('./images/DoiMK.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4; /* Màu nền dự phòng nếu ảnh không tải được */
+    background-color: #f4f4f4; 
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 30%;
-    background-color: rgba(255, 255, 255, 0.85); /* Màu nền trắng với độ mờ 90% */
+    background-color: rgba(255, 255, 255, 0.85); 
 }
 
 h2 {
