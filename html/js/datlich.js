@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Nút OK đã được nhấn."); // Thêm ghi nhật ký
         confirmationDiv.style.display = "none"; // Ẩn hộp xác nhận
         setTimeout(() => { // Thêm độ trễ nếu cần
-            window.location.href = "../index.html"; // Chuyển đến trang index
+            window.location.href = "./index.html"; // Chuyển đến trang index
         }, 100); // 100ms độ trễ
     });
     
