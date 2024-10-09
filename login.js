@@ -26,8 +26,12 @@ loginForm.addEventListener("submit", function(e) {
         // Nếu tìm thấy người dùng, lưu thông tin đăng nhập vào localStorage
         localStorage.setItem("userLogin", JSON.stringify(findUser));
         
-        // Chuyển hướng đến trang chính sau khi đăng nhập thành công
-        window.location.href = "./index.html";
+        // Chuyển hướng đến trang admin hoặc trang chính sau khi đăng nhập thành công
+        if (findUser.role === "admin") {
+            window.location.href = "./admin.html"; // Chuyển đến trang admin
+        } else {
+            window.location.href = "./index.html"; // Chuyển đến trang người dùng
+        }
     }
 });
 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý lịch hẹn</title>
+    <link rel="stylesheet" href="./html/css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quản lý lịch hẹn</h1>
+
+        <table id="bookingTable">
+            <thead>
+                <tr>
+                    <th>Tên người dùng</th>
+                    <th>Email</th>
+                    <th>Ngày</th>
+                    <th>Giờ</th>
+                    <th>Dịch vụ</th>
+                    <th>Ghi chú</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="bookingTableBody">
+                <!-- Dữ liệu lịch hẹn sẽ được chèn vào đây -->
+            </tbody>
+        </table>
+
+        <div id="confirmation" style="display: none;">
+            <h2>Xác nhận xóa</h2>
+            <p id="confirmation-message"></p>
+            <button id="confirmDelete">Xác nhận</button>
+            <button id="cancelDelete">Hủy</button>
+        </div>
+    </div>
+
+    <script src="./html/js/admin.js"></script>
+</body>
+</html>

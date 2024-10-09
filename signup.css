@@ -135,7 +135,22 @@ body {
     font-size: 15px;
     color: black;
 }
-
+.container_group label {
+    display: block; /* Hiển thị nhãn như một khối */
+    margin-bottom: 4px; /* Khoảng cách giữa nhãn và ô chọn (giảm xuống) */
+    font-weight: bold; /* Làm đậm chữ */
+    color: #333; /* Màu chữ */
+    font-size: 0.9rem; /* Kích thước chữ (giảm xuống) */
+}
+.container_input_1 { 
+    height: 40px;
+    margin-top: 12px;
+    padding: 0 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
 
 
 

@@ -6,7 +6,7 @@ const contactElement = document.getElementById("contact");
 const passwordElement = document.getElementById("password");
 const rePasswordElement = document.getElementById("rePassword");
 const showPasswordCheckbox = document.getElementById("showPassword");
-
+const roleElement = document.getElementById("role");
 
 const userLocal = JSON.parse(localStorage.getItem("users")) || [];
 
@@ -64,7 +64,8 @@ formRegister.addEventListener("submit", function(e) {
         userName: userNameElement.value,
         email: emailElement.value,
         contact: contactElement.value,
-        password: passwordElement.value
+        password: passwordElement.value,
+        role: roleElement.value
     };
 
   

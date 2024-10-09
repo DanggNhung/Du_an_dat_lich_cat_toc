@@ -3,6 +3,10 @@ body {
     background-color: #f0f0f0; /* Màu nền nhẹ nhàng */
     margin: 0;
     padding: 20px;
+    background: url('./images/hinh nen.jpg') no-repeat center center fixed; 
+    background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ */
+    color: #333; /* Màu chữ tối cho độ tương phản tốt */
+    font-family: Arial, sans-serif; /* Đặt font chữ */
 }
 
 .container {

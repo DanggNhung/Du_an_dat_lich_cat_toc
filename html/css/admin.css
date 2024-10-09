@@ -1,0 +1,65 @@
+body {
+    background: url('./images/hinh nen.jpg') no-repeat center center fixed; 
+    background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ */
+    color: #333; /* Màu chữ tối cho độ tương phản tốt */
+    font-family: Arial, sans-serif; /* Đặt font chữ */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng với độ trong suốt */
+    border-radius: 8px; /* Bo tròn góc */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em; /* Tăng kích thước chữ tiêu đề */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới tiêu đề */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2; /* Màu nền cho tiêu đề bảng */
+    font-weight: bold; /* Đậm chữ tiêu đề */
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.9); /* Nền ô trắng với độ trong suốt */
+}
+
+button {
+    padding: 10px 15px; /* Tăng kích thước nút */
+    margin: 5px;
+    cursor: pointer;
+    background-color: #007BFF; /* Màu nền nút */
+    color: white; /* Màu chữ nút */
+    border: none; /* Không có viền */
+    border-radius: 4px; /* Bo tròn góc nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+#confirmation {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Nền trắng với độ trong suốt */
+    border-radius: 4px; /* Bo tròn góc */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
