@@ -264,3 +264,16 @@ textarea:active {
 .center .button:hover {
     background-color: #1c84ff;
 }
+button.selected {
+    background-color: #4CAF50; /* Đổi màu nền khi nút được chọn */
+    color: white; /* Màu chữ trắng khi nút được chọn */
+    border: 2px solid #4CAF50;
+}
+.btn {
+    font-size: 24px; /* Kích thước biểu tượng cảm xúc bình thường */
+    transition: transform 0.2s; /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+.btn.large {
+    transform: scale(1.5); /* Phóng to biểu tượng cảm xúc */
+}
