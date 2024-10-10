@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const errorMessage = document.getElementById("errorMessage");
     const changePasswordSection = document.getElementById("changePasswordSection");
     const loginMessage = document.getElementById("loginMessage");
+    const successBox = document.getElementById("successBox"); 
+    const closeSuccess = document.querySelector(".close-success");
 
     // Lấy thông tin người dùng đã đăng nhập từ localStorage
     const currentUser = JSON.parse(localStorage.getItem("userLogin"));
@@ -55,10 +57,26 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.setItem("users", JSON.stringify(userLocal));
         }
 
-        // Hiển thị thông báo thành công
-        alert("Đổi mật khẩu thành công!");
+        successBox.style.display = 'block';
+
+        // Đóng modal khi nhấn vào dấu "x"
+        closeSuccess.addEventListener('click', function () {
+            successBox.style.display = 'none';
+        });
+
+        // Đóng modal khi nhấn ra ngoài vùng modal
+        window.addEventListener('click', function (event) {
+            if (event.target === successBox) {
+                successBox.style.display = 'none';
+            }
+        });
 
         // Chuyển hướng về trang đăng nhập hoặc trang chính
-        window.location.href = "./Login.html"; 
+        setTimeout(() => {
+            successBox.style.display = 'none'; // Ẩn modal trước khi chuyển hướng
+            window.location.href = "./Login.html"; 
+        }, 1500);
     });
 });
+
+
