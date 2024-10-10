@@ -11,8 +11,10 @@
         <h1>Hair Studio Shop</h1>
         <div class="cart">
             <span>Giỏ hàng: <span id="cart-count">0</span> sản phẩm</span>
+            <p>Tổng tiền: <span id="total-amount">0</span> VND</p>
+            <ul id="cart-list"></ul> <!-- Đây là nơi danh sách sản phẩm sẽ xuất hiện -->
         </div>
-    </header>
+    </header>    
     <main>
         <div class="product-list">
             <div class="product">
@@ -20,80 +22,80 @@
                     <img src="./html/images/sp1.jpg" alt="">
                 </div>
                 <h2>The Holy Black</h2>
-                <p>Giá: 429.000VND</p>
-                <button onclick="addToCart(10)">Thêm vào giỏ</button>
+                <p>Giá: 429.000 VND</p>
+                <button onclick="addToCart('The Holy Black', 429000)">Thêm vào giỏ</button>
             </div>
-
+            
             <div class="product">
                 <div class="picture">
                     <img src="./html/images/sp3.jpg" alt="">
                 </div>
                 <h2>Dapper Dan</h2>
-                <p>Giá: 480.000VND</p>
-                <button onclick="addToCart(20)">Thêm vào giỏ</button>
+                <p>Giá: 480.000 VND</p>
+                <button onclick="addToCart('Dapper Dan', 480000)">Thêm vào giỏ</button>
             </div>
-
+            
             <div class="product">
                 <div class="picture">
                     <img src="./html/images/sp2.jpg" alt="">
                 </div>
                 <h2>Volcanic Clay</h2>
-                <p>Giá: 330.000VND</p>
-                <button onclick="addToCart(20)">Thêm vào giỏ</button>
+                <p>Giá: 330.000 VND</p>
+                <button onclick="addToCart('Volcanic Clay', 330000)">Thêm vào giỏ</button>
             </div>
-
+            
             <div class="product">
                 <div class="picture">
                     <img src="./html/images/sp4.jpg" alt="">
                 </div>
                 <h2>Urban Primate</h2>
-                <p>Giá: 259.000VND</p>
-                <button onclick="addToCart(20)">Thêm vào giỏ</button>
+                <p>Giá: 259.000 VND</p>
+                <button onclick="addToCart('Urban Primate', 259000)">Thêm vào giỏ</button>
             </div>
-
+            
             <div class="product">
                 <div class="picture">
                     <img src="./html/images/sp5.jpg" alt="">
                 </div>
                 <h2>L'OREAL Hair Gel</h2>
-                <p>Giá: 45.000VND</p>
-                <button onclick="addToCart(20)">Thêm vào giỏ</button>
+                <p>Giá: 45.000 VND</p>
+                <button onclick="addToCart('L\'OREAL Hair Gel', 45000)">Thêm vào giỏ</button>
             </div>
-
+            
             <div class="product">
                 <div class="picture">
                     <img src="./html/images/sp6.jpg" alt="">
                 </div>
                 <h2>The Pro Hairspray</h2>
-                <p>Giá: 179.000VND</p>
-                <button onclick="addToCart(20)">Thêm vào giỏ</button>
+                <p>Giá: 179.000 VND</p>
+                <button onclick="addToCart('The Pro Hairspray', 179000)">Thêm vào giỏ</button>
             </div>
-
+            
             <div class="product">
                 <div class="picture">
                     <img src="./html/images/sp7.jpg" alt="">
                 </div>
                 <h2>Nguyễn Xuân Shampoo</h2>
-                <p>Giá: 145.000VND</p>
-                <button onclick="addToCart(20)">Thêm vào giỏ</button>
+                <p>Giá: 145.000 VND</p>
+                <button onclick="addToCart('Nguyễn Xuân Shampoo', 145000)">Thêm vào giỏ</button>
             </div>
-
+            
             <div class="product">
                 <div class="picture">
                     <img src="./html/images/sp8.jpg" alt="">
                 </div>
                 <h2>Grapefruit Essence Shampoo</h2>
-                <p>Giá: 200.000VND</p>
-                <button onclick="addToCart(20)">Thêm vào giỏ</button>
+                <p>Giá: 200.000 VND</p>
+                <button onclick="addToCart('Grapefruit Essence Shampoo', 200000)">Thêm vào giỏ</button>
             </div>
-
+            
             <div class="product">
                 <div class="picture">
                     <img src="./html/images/sp9.jpg" alt="">
                 </div>
                 <h2>Gatsby Clay</h2>
-                <p>Giá: 130.000VND</p>
-                <button onclick="addToCart(20)">Thêm vào giỏ</button>
+                <p>Giá: 130.000 VND</p>
+                <button onclick="addToCart('Gatsby Clay', 130000)">Thêm vào giỏ</button>
             </div>
     </main>
     <div class="ThanhToan">
